@@ -13,6 +13,21 @@
         android:theme="@style/Theme.SensorOrnekleri"
         tools:targetApi="31">
         <activity
+            android:name=".HumidityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GravityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProximityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TemperatureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PressureActivity"
+            android:exported="false" />
+        <activity
             android:name=".MagneticFieldActivity"
             android:exported="false" />
         <activity
