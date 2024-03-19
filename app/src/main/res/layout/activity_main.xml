@@ -6,13 +6,122 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/buttonAccelerometer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="11dp"
+        android:text="ACCELEROMETER"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGyroscope"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="10dp"
+        android:text="GYROSCOPE"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMagneticField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLight" />
+
+    <Button
+        android:id="@+id/buttonLight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="7dp"
+        android:text="LIGHT"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGyroscope"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAccelerometer" />
+
+    <Button
+        android:id="@+id/buttonMagneticField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="15dp"
+        android:text="MAGNETIC_FIELD"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGyroscope" />
+
+    <Button
+        android:id="@+id/buttonPressure"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="12dp"
+        android:text="PRESSURE"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTemperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMagneticField" />
+
+    <Button
+        android:id="@+id/buttonTemperature"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="13dp"
+        android:text="TEMPERATURE"
+        app:layout_constraintBottom_toTopOf="@+id/buttonProximity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPressure" />
+
+    <Button
+        android:id="@+id/buttonProximity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="12dp"
+        android:text="PROXIMITY"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGravity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTemperature" />
+
+    <Button
+        android:id="@+id/buttonGravity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="7dp"
+        android:text="GRAVITY"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHumidity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProximity" />
+
+    <Button
+        android:id="@+id/buttonHumidity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="16dp"
+        android:text="RELATIVE HUMIDITY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGravity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
