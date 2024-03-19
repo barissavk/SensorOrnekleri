@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GyroscopeActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/xTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X Ekseni: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/yTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y Ekseni: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/xTextView"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/zTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z Ekseni: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/yTextView"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
