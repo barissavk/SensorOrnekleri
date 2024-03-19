@@ -6,4 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".MagneticFieldActivity">
 
+    <TextView
+        android:id="@+id/xTextView"
+        android:layout_width="148dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="X: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/xTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Y: "
+        app:layout_constraintBottom_toTopOf="@+id/zTextView"
+        app:layout_constraintEnd_toEndOf="@+id/zTextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/xTextView"
+        app:layout_constraintTop_toBottomOf="@+id/xTextView" />
+
+    <TextView
+        android:id="@+id/zTextView"
+        android:layout_width="145dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/yTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="523dp"
+        android:text="Z: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yTextView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
